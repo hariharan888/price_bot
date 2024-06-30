@@ -8,8 +8,8 @@ RSpec.describe PriceBotCLI do
       days: 30,
       limit: 50,
       radius: 2,
-      site: "booking.com",
-      format: "csv"
+      site: 'booking.com',
+      format: 'csv',
     }
   end
 
@@ -19,8 +19,8 @@ RSpec.describe PriceBotCLI do
       expect(cli.days).to eq(30)
       expect(cli.limit).to eq(50)
       expect(cli.radius).to eq(2)
-      expect(cli.site).to eq("booking.com")
-      expect(cli.format).to eq("csv")
+      expect(cli.site).to eq('booking.com')
+      expect(cli.format).to eq('csv')
     end
   end
 
@@ -30,7 +30,7 @@ RSpec.describe PriceBotCLI do
       cli.parse_options
 
       # Override ARGV for testing
-      ARGV.replace(['-d', '10', '-l', '20', '-r', '5', '-a', 'Test Area', '-s', 'booking.com', '-f', 'json', '-o', 'output.json'])
+      ARGV.replace(['-d', '10', '-l', '20', '-r', '5', '-n', '15', '-a', 'Test Area', '-s', 'booking.com', '-f', 'json', '-o', 'output.json'])
       cli.parse_options
 
       expect(cli.days).to eq(10)
@@ -40,6 +40,7 @@ RSpec.describe PriceBotCLI do
       expect(cli.site).to eq('booking.com')
       expect(cli.format).to eq('json')
       expect(cli.output).to eq('output.json')
+      expect(cli.top_n).to eq(15)
     end
   end
 
@@ -72,7 +73,7 @@ RSpec.describe PriceBotCLI do
     it 'calls PriceBot with correct parameters' do
       ARGV.replace(['-a', 'Test Area', '-o', 'output.json'])
 
-      price_bot = instance_double("PriceBot", fetch: nil)
+      price_bot = instance_double('PriceBot', fetch: nil)
       expect(PriceBot).to receive(:new).with(
         days: 30,
         limit: 50,
@@ -80,7 +81,8 @@ RSpec.describe PriceBotCLI do
         area: 'Test Area',
         site: 'booking.com',
         format: 'csv',
-        output: 'output.json'
+        output: 'output.json',
+        top_n: nil
       ).and_return(price_bot)
 
       cli = PriceBotCLI.new

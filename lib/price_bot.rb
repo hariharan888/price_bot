@@ -5,7 +5,7 @@ require "uri"
 require_relative './site/booking/booking'
 
 class PriceBot
-  def initialize(days:, limit:, radius:, area:, site:, format:, output:)
+  def initialize(days:, limit:, radius:, area:, site:, format:, output:, top_n: nil)
     @days = days
     @limit = limit
     @radius = radius
@@ -13,6 +13,7 @@ class PriceBot
     @site = get_site(site)
     @format = format
     @output = output
+    @top_n = top_n
   end
 
   def fetch
@@ -37,6 +38,7 @@ class PriceBot
       limit: @limit,
       radius: @radius,
       area: @area,
+      top_n: @top_n
     }
     @site.fetch_nightly_prices(params)
   end

@@ -4,7 +4,7 @@ require "optparse"
 require_relative "./price_bot"
 
 class PriceBotCLI
-  attr_reader :days, :limit, :radius, :area, :site, :format, :output
+  attr_reader :days, :limit, :radius, :area, :site, :format, :output, :top_n
 
   def initialize
     @options = {}
@@ -46,6 +46,10 @@ class PriceBotCLI
         @options[:output] = output
       end
 
+      opts.on("-n", "--top-n=N", Integer, "Number of top prices per listing") do |top_n|
+        @options[:top_n] = top_n
+      end
+
       opts.on_tail("-h", "--help", "Show this message") do
         puts opts
         exit
@@ -61,6 +65,9 @@ class PriceBotCLI
       @site = @options[:site]&.downcase || "booking.com"
       @format = @options[:format]&.downcase || "csv"
       @output = @options[:output]
+      @top_n = @options[:top_n]
+
+      @options
     end
   end
 
@@ -90,6 +97,7 @@ class PriceBotCLI
       site: @site,
       format: @format,
       output: @output,
+      top_n: @top_n
     )
     price_bot.fetch
   rescue => e

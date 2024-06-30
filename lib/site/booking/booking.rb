@@ -9,10 +9,22 @@ module Site
     BASE_URL = "https://www.booking.com/dml/graphql"
 
     def fetch_nightly_prices(params)
-      listings = get_listings(params)
+      params => { days:, limit:, radius:, area:, top_n: }
+
+      listings = get_listings({ days:, limit:, radius:, area: })
+
       listings.reduce([]) do |acc, listing|
-        prices = get_nightly_prices(listing, params)
+        prices = get_nightly_prices(listing, { days:, limit:, radius:, area: })
         listings_with_prices = prices.map { |price| transform_daily_price_record(listing, price) }
+
+        if top_n
+          # if top_n argument is passed, take only n highest priced dates for the listing
+          listings_with_prices = listings_with_prices
+            .sort_by { |rec| rec["Average Price"] }
+            .reverse
+            .take(top_n)
+        end
+
         acc += listings_with_prices
         acc
       end
@@ -31,20 +43,20 @@ module Site
 
     def transform_daily_price_record(listing, price)
       {
-        'ID': listing.id,
-        'Site': "booking.com",
-        'Name': listing.name,
-        'Distance from centre': listing.distance_from_centre,
-        'Date': price["checkin"],
-        'Average Price': price["avgPrice"],
-        'Review Score': listing.review_score,
-        'Review Count': listing.review_count,
-        'Stars': listing.stars,
-        'Meal Plan': listing.meal_plan,
-        'Address': listing.address,
-        'City': listing.city,
-        'Country Code': listing.country_code,
-        'Currency': listing.currency,
+        "ID" => listing.id,
+        "Site" => "booking.com",
+        "Name" => listing.name,
+        "Distance from centre" => listing.distance_from_centre,
+        "Date" => price["checkin"],
+        "Average Price" => price["avgPrice"],
+        "Review Score" => listing.review_score,
+        "Review Count" => listing.review_count,
+        "Stars" => listing.stars,
+        "Meal Plan" => listing.meal_plan,
+        "Address" => listing.address,
+        "City" => listing.city,
+        "Country Code" => listing.country_code,
+        "Currency" => listing.currency,
       }
     end
 
