@@ -23,6 +23,12 @@ bundle exec bin/pricebot -d DAYS -l LIMIT -r RADIUS -a AREA -s SITE -f FORMAT -o
 
 ### Example
 
+Fetch prices for 365 days, limiting to 50 listings within a 2 km radius of New York, using booking.com, and save the output as CSV to `prices.csv`:
+
+```sh
+./bin/pricebot -d 365 -l 50 -r 2 -a "New York" -s "booking.com" -f "csv" -o "prices.csv"
+```
+
 Fetch prices for 30 days, limiting to 50 listings within a 5 km radius of New York, using booking.com, and save the output as JSON to `prices.json`:
 
 ```sh
