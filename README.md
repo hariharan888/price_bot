@@ -20,6 +20,7 @@ bundle exec bin/pricebot -d DAYS -l LIMIT -r RADIUS -a AREA -s SITE -f FORMAT -o
 - `-s, --site=SITE`: Booking site. Options Available: `['booking.com']`
 - `-f, --format=FORMAT`: Output format. Options Available: `['csv', 'json']` (default: 'csv')
 - `-o, --output=OUTPUT_LOCATION`: Output file location
+- `-n, --top-n=TOP_N`: If provided, will output only the top n dates with highest pricing for each listing 
 
 ### Example
 
