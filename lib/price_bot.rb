@@ -2,6 +2,7 @@ require "json"
 require "csv"
 require "net/http"
 require "uri"
+require_relative './site/booking/booking'
 
 class PriceBot
   def initialize(days:, limit:, radius:, area:, site:, format:, output:)
@@ -22,11 +23,11 @@ class PriceBot
   private
 
   def get_site(site)
-    case @site.downcase
+    case site.downcase
     when "booking.com"
-      PriceBot::Site::Booking.new
+      Site::Booking.new
     else
-      raise "Unsupported site: #{@site}"
+      raise NotImplementedError, "Unsupported site: #{@site}"
     end
   end
 

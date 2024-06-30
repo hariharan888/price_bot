@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require "optparse"
+require_relative "./price_bot"
 
 class PriceBotCLI
   attr_reader :days, :limit, :radius, :area, :site, :format, :output
@@ -12,34 +13,37 @@ class PriceBotCLI
 
   def parse_options
     OptionParser.new do |opts|
-      opts.banner = "Usage: price_bot.rb [options]"
+      opts.banner = "PriceBot: A tool to fetch nightly prices for hotels from booking sites."
 
-      opts.on("-dDAYS", "--days=DAYS", Integer, "Number of days (default: 30)") do |days|
+      opts.separator ""
+      opts.separator "Specific options:"
+
+      opts.on("-d", "--days=DAYS", Integer, "Number of days (default: 30)") do |days|
         @options[:days] = days
       end
 
-      opts.on("-lLIMIT", "--limit=LIMIT", Integer, "Number of listings (default: 50)") do |limit|
+      opts.on("-l", "--limit=LIMIT", Integer, "Number of listings (default: 50)") do |limit|
         @options[:limit] = limit
       end
 
-      opts.on("-rRADIUS", "--radius=RADIUS", Float, "Radius in km (default: 2)") do |radius|
+      opts.on("-r", "--radius=RADIUS", Float, "Radius in km (default: 2)") do |radius|
         @options[:radius] = radius
       end
 
-      opts.on("-aAREA", "--area=AREA", String, "Area around which listings should be searched") do |area|
+      opts.on("-a", "--area=AREA", String, "Area around which listings should be searched") do |area|
         @options[:area] = area
       end
 
-      opts.on("-sSITE", "--site=SITE", String, "Booking site. Options Available: ['booking.com']. Will add more soon!") do |site|
+      opts.on("-s", "--site=SITE", String, "Booking site. Options Available: ['booking.com']. Will add more soon!") do |site|
         @options[:site] = site
       end
 
-      opts.on("-fFORMAT", "--format=FORMAT", String, "Output Format. Options Available: ['csv', 'json']. (default: 'csv')") do |site|
-        @options[:site] = site
+      opts.on("-f", "--format=FORMAT", String, "Output Format. Options Available: ['csv', 'json']. (default: 'csv')") do |output_format|
+        @options[:format] = output_format
       end
 
-      opts.on("-oOUTPUT_LOCATION", "--output=OUTPUT_LOCATION", String, "Output file location.") do |site|
-        @options[:site] = site
+      opts.on("-o", "--output=OUTPUT_LOCATION", String, "Output file location.") do |output|
+        @options[:output] = output
       end
 
       opts.on_tail("-h", "--help", "Show this message") do
@@ -54,11 +58,9 @@ class PriceBotCLI
       @limit = @options[:limit] || 50
       @radius = @options[:radius] || 2
       @area = @options[:area]
-      @site = @options[:site].downcase || "booking.com"
-      @format = @options[:format].downcase || "csv"
+      @site = @options[:site]&.downcase || "booking.com"
+      @format = @options[:format]&.downcase || "csv"
       @output = @options[:output]
-
-      validate_options
     end
   end
 
@@ -75,13 +77,11 @@ class PriceBotCLI
     unless @site == "booking.com"
       abort "Error: Unsupported site - #{@site}. Options Available: ['booking.com']"
     end
-
-    unless File.file?(@output) && File.writable?(@output)
-      abort "Error: Output file location is not writable."
-    end
   end
 
   def run
+    validate_options
+
     price_bot = PriceBot.new(
       days: @days,
       limit: @limit,
@@ -96,7 +96,3 @@ class PriceBotCLI
     abort "Error: #{e.message}"
   end
 end
-
-# Execute the script
-cli = PriceBotCLI.new
-cli.run
