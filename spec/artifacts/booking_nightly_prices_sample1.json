@@ -1,0 +1,437 @@
+{
+  "data": {
+    "availabilityCalendar": {
+      "hotelId": 5685250,
+      "__typename": "AvailabilityCalendarQueryResult",
+      "days": [
+        {
+          "checkin": "2024-06-30",
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "available": true,
+          "avgPrice": 3000
+        },
+        {
+          "available": true,
+          "avgPrice": 3000,
+          "checkin": "2024-07-02",
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1
+        },
+        {
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "checkin": "2024-07-01",
+          "avgPrice": 3000,
+          "available": true
+        },
+        {
+          "checkin": "2024-07-06",
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "available": true,
+          "avgPrice": 3000
+        },
+        {
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "checkin": "2024-07-05",
+          "avgPrice": 3000,
+          "available": true
+        },
+        {
+          "available": true,
+          "avgPrice": 3000,
+          "checkin": "2024-07-04",
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1
+        },
+        {
+          "checkin": "2024-07-03",
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "available": true,
+          "avgPrice": 3000
+        },
+        {
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "checkin": "2024-06-29",
+          "avgPrice": 3500,
+          "available": true
+        },
+        {
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "checkin": "2024-06-28",
+          "avgPrice": 3000,
+          "available": true
+        },
+        {
+          "checkin": "2024-07-31",
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "available": true,
+          "avgPrice": 3000
+        },
+        {
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "checkin": "2024-07-30",
+          "avgPrice": 3000,
+          "available": true
+        },
+        {
+          "avgPrice": 3000,
+          "available": true,
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "checkin": "2024-06-23"
+        },
+        {
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "checkin": "2024-06-22",
+          "avgPrice": 0,
+          "available": false
+        },
+        {
+          "available": true,
+          "avgPrice": 3999,
+          "checkin": "2024-06-21",
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay"
+        },
+        {
+          "avgPrice": 3000,
+          "available": true,
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "checkin": "2024-06-20"
+        },
+        {
+          "available": true,
+          "avgPrice": 3000,
+          "checkin": "2024-06-27",
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1
+        },
+        {
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "checkin": "2024-06-26",
+          "avgPrice": 3000,
+          "available": true
+        },
+        {
+          "avgPrice": 3000,
+          "available": true,
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "checkin": "2024-06-25"
+        },
+        {
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "checkin": "2024-06-24",
+          "avgPrice": 3000,
+          "available": true
+        },
+        {
+          "checkin": "2024-06-19",
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "available": true,
+          "avgPrice": 3000
+        },
+        {
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "checkin": "2024-06-18",
+          "avgPrice": 3000,
+          "available": true
+        },
+        {
+          "checkin": "2024-07-29",
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "available": true,
+          "avgPrice": 3000
+        },
+        {
+          "available": true,
+          "avgPrice": 3000,
+          "checkin": "2024-06-17",
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1
+        },
+        {
+          "avgPrice": 3000,
+          "available": true,
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "checkin": "2024-07-20"
+        },
+        {
+          "avgPrice": 3000,
+          "available": true,
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "checkin": "2024-07-24"
+        },
+        {
+          "avgPrice": 1500,
+          "available": true,
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "checkin": "2024-06-12"
+        },
+        {
+          "available": true,
+          "avgPrice": 3000,
+          "checkin": "2024-07-23",
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1
+        },
+        {
+          "checkin": "2024-06-11",
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "available": true,
+          "avgPrice": 4000
+        },
+        {
+          "available": true,
+          "avgPrice": 3000,
+          "checkin": "2024-07-22",
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay"
+        },
+        {
+          "avgPrice": 4000,
+          "available": true,
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "checkin": "2024-06-10"
+        },
+        {
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "checkin": "2024-07-21",
+          "avgPrice": 3000,
+          "available": true
+        },
+        {
+          "checkin": "2024-07-28",
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "available": true,
+          "avgPrice": 3000
+        },
+        {
+          "checkin": "2024-06-16",
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "available": false,
+          "avgPrice": 0
+        },
+        {
+          "checkin": "2024-07-27",
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "available": true,
+          "avgPrice": 3000
+        },
+        {
+          "avgPrice": 0,
+          "available": false,
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "checkin": "2024-06-15"
+        },
+        {
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "checkin": "2024-07-26",
+          "avgPrice": 3000,
+          "available": true
+        },
+        {
+          "avgPrice": 0,
+          "available": false,
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "checkin": "2024-06-14"
+        },
+        {
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "checkin": "2024-07-25",
+          "avgPrice": 3000,
+          "available": true
+        },
+        {
+          "avgPrice": 2500,
+          "available": true,
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "checkin": "2024-06-13"
+        },
+        {
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "checkin": "2024-06-09",
+          "avgPrice": 4000,
+          "available": true
+        },
+        {
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "checkin": "2024-06-08",
+          "avgPrice": 0,
+          "available": false
+        },
+        {
+          "checkin": "2024-07-19",
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "available": true,
+          "avgPrice": 3000
+        },
+        {
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "checkin": "2024-06-07",
+          "avgPrice": 4000,
+          "available": true
+        },
+        {
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "checkin": "2024-07-18",
+          "avgPrice": 3000,
+          "available": true
+        },
+        {
+          "checkin": "2024-06-06",
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "available": true,
+          "avgPrice": 4000
+        },
+        {
+          "avgPrice": 3000,
+          "available": true,
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "checkin": "2024-07-13"
+        },
+        {
+          "checkin": "2024-06-01",
+          "minLengthOfStay": 0,
+          "__typename": "AvailabilityCalendarDay",
+          "available": false,
+          "avgPrice": 0
+        },
+        {
+          "checkin": "2024-07-12",
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "available": true,
+          "avgPrice": 3000
+        },
+        {
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "checkin": "2024-07-11",
+          "avgPrice": 3000,
+          "available": true
+        },
+        {
+          "avgPrice": 3000,
+          "available": true,
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "checkin": "2024-07-10"
+        },
+        {
+          "avgPrice": 3000,
+          "available": true,
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "checkin": "2024-07-17"
+        },
+        {
+          "avgPrice": 4000,
+          "available": true,
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "checkin": "2024-06-05"
+        },
+        {
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "checkin": "2024-07-16",
+          "avgPrice": 3000,
+          "available": true
+        },
+        {
+          "available": true,
+          "avgPrice": 4000,
+          "checkin": "2024-06-04",
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay"
+        },
+        {
+          "avgPrice": 3000,
+          "available": true,
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1,
+          "checkin": "2024-07-15"
+        },
+        {
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "checkin": "2024-06-03",
+          "avgPrice": 4000,
+          "available": true
+        },
+        {
+          "available": true,
+          "avgPrice": 3000,
+          "checkin": "2024-07-14",
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1
+        },
+        {
+          "available": true,
+          "avgPrice": 4000,
+          "checkin": "2024-06-02",
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1
+        },
+        {
+          "available": true,
+          "avgPrice": 3000,
+          "checkin": "2024-07-09",
+          "__typename": "AvailabilityCalendarDay",
+          "minLengthOfStay": 1
+        },
+        {
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "checkin": "2024-07-08",
+          "avgPrice": 3000,
+          "available": true
+        },
+        {
+          "avgPrice": 3000,
+          "available": true,
+          "minLengthOfStay": 1,
+          "__typename": "AvailabilityCalendarDay",
+          "checkin": "2024-07-07"
+        }
+      ]
+    }
+  }
+}

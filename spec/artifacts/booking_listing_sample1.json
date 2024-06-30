@@ -1,0 +1,386 @@
+{
+  "ribbon": null,
+  "customBadges": {
+    "__typename": "CustomBadges",
+    "showBhTravelCreditBadge": false,
+    "showSkiToDoor": false,
+    "showOnlineCheckinBadge": null
+  },
+  "priceDisplayInfoIrene": {
+    "taxExceptions": [],
+    "badges": [],
+    "discounts": [],
+    "excludedCharges": {
+      "__typename": "ExcludeChargesIrene",
+      "excludeChargesList": [
+        {
+          "amountPerStay": {
+            "amountUnformatted": 701.999984309077,
+            "amountRounded": "₹ 702",
+            "amount": "₹ 702",
+            "__typename": "PriceDisplayIrene",
+            "currency": "INR"
+          },
+          "chargeMode": "VARIABLE_AMOUNT",
+          "__typename": "ChargeDisplayIrene",
+          "chargeInclusion": "EXCLUDED",
+          "chargeType": 145
+        }
+      ],
+      "excludeChargesAggregated": {
+        "amountPerStay": {
+          "amountRounded": "₹ 702",
+          "amountUnformatted": 701.999984309077,
+          "amount": "₹ 702",
+          "__typename": "PriceDisplayIrene",
+          "currency": "INR"
+        },
+        "__typename": "PriceDisplayAggregatedIrene",
+        "copy": {
+          "__typename": "TranslationTag",
+          "translation": null
+        }
+      }
+    },
+    "__typename": "PriceDisplayInfoIrene",
+    "chargesInfo": {
+      "translation": "+₹ 702 taxes and charges",
+      "__typename": "TranslationTag"
+    },
+    "rewards": {
+      "rewardsList": [],
+      "__typename": "RewardsIrene",
+      "rewardsAggregated": {
+        "copy": {
+          "__typename": "TranslationTag",
+          "translation": "Earn ₹ 0 Credits"
+        },
+        "__typename": "PriceDisplayAggregatedIrene",
+        "amountPerStay": {
+          "currency": "INR",
+          "__typename": "PriceDisplayIrene",
+          "amount": "₹ 0",
+          "amountRounded": "₹ 0",
+          "amountUnformatted": 0
+        }
+      }
+    },
+    "priceBeforeDiscount": {
+      "copy": { "__typename": "TranslationTag", "translation": null },
+      "amountPerStay": {
+        "currency": "",
+        "__typename": "PriceDisplayIrene",
+        "amount": "",
+        "amountRounded": "",
+        "amountUnformatted": 0
+      },
+      "__typename": "PriceDisplayAggregatedIrene"
+    },
+    "useRoundedAmount": true,
+    "displayPrice": {
+      "__typename": "PriceDisplayAggregatedIrene",
+      "amountPerStay": {
+        "currency": "INR",
+        "__typename": "PriceDisplayIrene",
+        "amount": "₹ 5,850",
+        "amountRounded": "₹ 5,850",
+        "amountUnformatted": 5850
+      },
+      "copy": {
+        "translation": "Total",
+        "__typename": "TranslationTag"
+      }
+    }
+  },
+  "description": null,
+  "seoThemes": [],
+  "isTpiExclusiveProperty": false,
+  "soldOutInfo": {
+    "alternativeDatesMessages": [],
+    "isSoldOut": false,
+    "__typename": "SoldOutInfo",
+    "messages": []
+  },
+  "showAdLabel": false,
+  "persuasion": {
+    "showNativeAdLabel": false,
+    "nativeAdId": null,
+    "__typename": "SearchResultPersuasion",
+    "nativeAdsCpc": null,
+    "highlighted": false,
+    "nativeAdsTracking": null,
+    "autoextended": false,
+    "preferred": false,
+    "geniusRateAvailable": false,
+    "preferredPlus": false,
+    "sponsoredAdsData": null
+  },
+  "basicPropertyData": {
+    "isTestProperty": false,
+    "reviewScore": {
+      "secondaryScore": 0,
+      "reviewCount": 0,
+      "totalScoreTextTag": {
+        "__typename": "TranslationTag",
+        "translation": null
+      },
+      "showScore": false,
+      "showSecondaryScore": false,
+      "__typename": "Reviews",
+      "score": 0,
+      "secondaryTextTag": {
+        "__typename": "TranslationTag",
+        "translation": null
+      }
+    },
+    "starRating": null,
+    "externalReviewScore": null,
+    "__typename": "BasicPropertyData",
+    "isClosed": false,
+    "paymentConfig": null,
+    "location": {
+      "address": "Convent Road",
+      "__typename": "Location",
+      "city": "Kodaikanal",
+      "countryCode": "in"
+    },
+    "photos": {
+      "__typename": "PropertyPhotos",
+      "main": {
+        "__typename": "Photo",
+        "lowResJpegUrl": {
+          "relativeUrl": "/xdata/images/hotel/square240/553738622.jpg?k=c5d863a9c1e2117ba410719934c9d1aa7ee8b4a9f42dded50dd7310f4c8e569a&o=",
+          "__typename": "PhotoResource"
+        },
+        "highResJpegUrl": {
+          "__typename": "PhotoResource",
+          "relativeUrl": "/xdata/images/hotel/square600/553738622.jpg?k=c5d863a9c1e2117ba410719934c9d1aa7ee8b4a9f42dded50dd7310f4c8e569a&o="
+        },
+        "lowResUrl": {
+          "__typename": "PhotoResource",
+          "relativeUrl": "/xdata/images/hotel/square240/553738622.webp?k=9b742b333190dd9ec905a5eced019caa60af328f86fbef6db23fb1a2328718ea&o="
+        },
+        "highResUrl": {
+          "relativeUrl": "/xdata/images/hotel/square600/553738622.webp?k=9b742b333190dd9ec905a5eced019caa60af328f86fbef6db23fb1a2328718ea&o=",
+          "__typename": "PhotoResource"
+        }
+      }
+    },
+    "ufi": -2101138,
+    "id": 12011504,
+    "accommodationTypeId": 213,
+    "pageName": "caron-niron-two-bedroom-villa"
+  },
+  "location": {
+    "skiLiftDistance": null,
+    "geoDistanceMeters": null,
+    "beachDistance": null,
+    "nearbyBeachNames": [],
+    "mainDistance": "150 m from centre",
+    "__typename": "SearchResultsPropertyLocation",
+    "beachWalkingTime": null,
+    "displayLocation": "Kodaikānāl",
+    "publicTransportDistanceDescription": null
+  },
+  "policies": {
+    "showFreeCancellation": false,
+    "enableJapaneseUsersSpecialCase": null,
+    "__typename": "Policies",
+    "showNoPrepayment": true
+  },
+  "propertyCribsAvailabilityLabel": null,
+  "mealPlanIncluded": null,
+  "bundleRatesAvailable": false,
+  "acceptsWalletCredit": false,
+  "trackOnView": [],
+  "bookerExperienceContentUIComponentProps": [],
+  "propertySustainability": {
+    "tier": {
+      "type": "NONE",
+      "__typename": "SrPropertySustainabilityTier"
+    },
+    "isSustainable": false,
+    "__typename": "SrPropertySustainability",
+    "chainProgrammes": null,
+    "levelId": "L0",
+    "certifications": null,
+    "facilities": null
+  },
+  "displayName": {
+    "translationTag": {
+      "translation": null,
+      "__typename": "TranslationTag"
+    },
+    "__typename": "TextWithTranslationTag",
+    "text": "Caron Niron Two bedroom Villa"
+  },
+  "mlBookingHomeTags": [],
+  "visibilityBoosterEnabled": null,
+  "showGeniusLoginMessage": false,
+  "badges": [],
+  "nbWishlists": 0,
+  "recommendedDate": {
+    "__typename": "RecommendedDate",
+    "checkin": "",
+    "checkout": "",
+    "lengthOfStay": 0
+  },
+  "hostTraderLabel": "PRIVATE",
+  "licenseDetails": null,
+  "matchingUnitConfigurations": {
+    "unitConfigurations": [
+      {
+        "localizedArea": {
+          "__typename": "LocalizedArea",
+          "unit": "m²",
+          "localizedArea": "11"
+        },
+        "apartmentRooms": [
+          {
+            "config": {
+              "bedTypeId": 6,
+              "__typename": "ApartmentRoom",
+              "roomId": 95000596,
+              "bedCount": 1,
+              "roomType": "Bedroom"
+            },
+            "__typename": "ApartmentRoomDetails",
+            "roomName": {
+              "translation": "Bedroom",
+              "tag": "bp_room_2_bedroom",
+              "__typename": "TranslationTag"
+            }
+          },
+          {
+            "__typename": "ApartmentRoomDetails",
+            "roomName": {
+              "__typename": "TranslationTag",
+              "tag": "bp_room_2_bedroom",
+              "translation": "Bedroom"
+            },
+            "config": {
+              "roomType": "Bedroom",
+              "bedCount": 1,
+              "roomId": 95000597,
+              "__typename": "ApartmentRoom",
+              "bedTypeId": 6
+            }
+          },
+          {
+            "roomName": {
+              "translation": "Living room",
+              "tag": "hp_room_1_living_room",
+              "__typename": "TranslationTag"
+            },
+            "__typename": "ApartmentRoomDetails",
+            "config": {
+              "__typename": "ApartmentRoom",
+              "bedTypeId": 5,
+              "roomType": "Living Room",
+              "bedCount": 1,
+              "roomId": 95000598
+            }
+          }
+        ],
+        "nbBathrooms": 2,
+        "unitTypeNames": [
+          {
+            "translation": "Entire villa",
+            "__typename": "TranslationTag"
+          }
+        ],
+        "name": "Two-Bedroom Villa",
+        "__typename": "UnitConfiguration",
+        "nbUnits": 1,
+        "unitTypeId": 31,
+        "nbKitchens": 1,
+        "nbLivingrooms": 1,
+        "bedConfigurations": [
+          {
+            "beds": [
+              { "__typename": "Bed", "count": 1, "type": 5 },
+              { "__typename": "Bed", "count": 2, "type": 6 }
+            ],
+            "nbAllBeds": 3,
+            "__typename": "BedConfiguration"
+          }
+        ],
+        "unitId": 1201150401,
+        "nbAllBeds": 3,
+        "nbBedrooms": 2
+      }
+    ],
+    "__typename": "MatchingUnitConfigurations",
+    "commonConfiguration": {
+      "__typename": "UnitConfiguration",
+      "name": null,
+      "unitTypeNames": [
+        {
+          "__typename": "TranslationTag",
+          "translation": "Entire villa"
+        }
+      ],
+      "nbBathrooms": 2,
+      "localizedArea": {
+        "localizedArea": "11",
+        "unit": "m²",
+        "__typename": "LocalizedArea"
+      },
+      "nbBedrooms": 2,
+      "nbAllBeds": 3,
+      "unitId": 0,
+      "nbLivingrooms": 1,
+      "bedConfigurations": [
+        {
+          "beds": [
+            { "__typename": "Bed", "count": 1, "type": 5 },
+            { "type": 6, "count": 2, "__typename": "Bed" }
+          ],
+          "nbAllBeds": 3,
+          "__typename": "BedConfiguration"
+        }
+      ],
+      "nbKitchens": 1,
+      "nbUnits": 1
+    }
+  },
+  "__typename": "SearchResultProperty",
+  "geniusInfo": null,
+  "isNewlyOpened": true,
+  "blocks": [
+    {
+      "freeCancellationUntil": null,
+      "finalPrice": {
+        "__typename": "Price",
+        "currency": "INR",
+        "amount": 5850
+      },
+      "originalPrice": {
+        "amount": 5850,
+        "currency": "INR",
+        "__typename": "Price"
+      },
+      "__typename": "Block",
+      "blockMatchTags": {
+        "__typename": "BlockMatchTags",
+        "childStaysForFree": false
+      },
+      "blockId": {
+        "__typename": "BlockId",
+        "policyGroupId": "392381997",
+        "packageId": "0",
+        "mealPlanId": 2,
+        "roomId": "1201150401",
+        "bundleId": 0,
+        "occupancy": 1
+      },
+      "thirdPartyInventoryContext": {
+        "__typename": "ThirdPartyInventoryContext",
+        "isTpiBlock": false
+      },
+      "onlyXLeftMessage": null,
+      "hasCrib": false
+    }
+  ],
+  "relocationMode": null
+}
