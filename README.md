@@ -8,7 +8,7 @@ PriceBot is a command-line tool to fetch nightly prices for the given amount of 
 You can run PriceBot from the command line as follows:
 
 ```sh
-bundle exec bin/pricebot -d DAYS -l LIMIT -r RADIUS -a AREA -s SITE -f FORMAT -o OUTPUT
+bundle exec bin/price_bot.rb -d DAYS -l LIMIT -r RADIUS -a AREA -s SITE -f FORMAT -o OUTPUT
 ```
 
 ### Options
@@ -27,20 +27,20 @@ bundle exec bin/pricebot -d DAYS -l LIMIT -r RADIUS -a AREA -s SITE -f FORMAT -o
 Fetch prices for 365 days, limiting to 50 listings within a 2 km radius of New York, using booking.com, and save the output as CSV to `prices.csv`:
 
 ```sh
-./bin/pricebot -d 365 -l 50 -r 2 -a "New York" -s "booking.com" -f "csv" -o "prices.csv"
+bundle exec bin/price_bot.rb -d 365 -l 50 -r 2 -a "New York" -s "booking.com" -f "csv" -o "prices.csv"
 ```
 
 In the above request, to get only top n daily prices for each listing:
 
 ```sh
-./bin/pricebot -d 365 -l 50 -r 2 -a "New York" -s "booking.com" -f "csv" -o "top_prices.csv" -n 3
+bundle exec bin/price_bot.rb -d 365 -l 50 -r 2 -a "New York" -s "booking.com" -f "csv" -o "top_prices.csv" -n 3
 ```
 
 
 Fetch prices for 30 days, limiting to 50 listings within a 5 km radius of New York, using booking.com, and save the output as JSON to `prices.json`:
 
 ```sh
-./bin/pricebot -d 30 -l 50 -r 5 -a "New York" -s "booking.com" -f "json" -o "prices.json"
+bundle exec bin/price_bot.rb -d 30 -l 50 -r 5 -a "New York" -s "booking.com" -f "json" -o "prices.json"
 ```
 
 ## Running Tests
